@@ -1,7 +1,18 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
+### Clone the repository
+git clone https://github.com/anikkumarsarker3/vinkon-ass-task.git
 
+### Navigate into the project folder
+cd vinkon-ass-task
+
+### Install dependencies
+```bash
+npm install
+# or
+yarn install
+# or 
+pnpm install
+```
 First, run the development server:
 
 ```bash
