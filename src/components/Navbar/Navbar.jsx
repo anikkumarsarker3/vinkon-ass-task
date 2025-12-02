@@ -20,7 +20,7 @@ const Navbar = () => {
     }, []);
     const links = <>
         <Link href='/' className="hover:text-blue-600 transition">Home</Link>
-        <Link href='/' className="hover:text-blue-600 transition">Services</Link>
+        <Link href='/wishlist' className="hover:text-blue-600 transition">Wishlist</Link>
         <Link href='/' className="hover:text-blue-600 transition">About</Link>
         <Link href='/' className="hover:text-blue-600 transition">Contact</Link>
     </>

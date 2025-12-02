@@ -1,4 +1,6 @@
+import ProductActions from "@/components/Button/ProductActions";
 import Card from "@/components/Home/Card";
+import { getProduct } from "@/utility/readLocalStore";
 import { FaStar, FaTruck, FaCheckCircle, FaInfoCircle } from "react-icons/fa";
 const Page = async ({ params, }) => {
     const { id } = await params;
@@ -7,7 +9,7 @@ const Page = async ({ params, }) => {
         const data = await res.json();
         let products = data.products;
         const product = products.filter(data => data.id === Number(id))
-        console.log(products)
+        // console.log(products)
         const filtered = products.filter(data => data.id !== Number(id) && data.category === product[0].category)
         const {
             title,
@@ -31,6 +33,14 @@ const Page = async ({ params, }) => {
             meta,
             images,
             thumbnail } = product[0]
+
+        // const list = await getProduct();
+        // console.log(list)
+
+        // console.log(id)
+
+        // console.log(list.includes(Number(id)));
+        // console.log(list.includes(id))
         return (
             <div className="mt-18 max-w-7xl mx-auto">
 
@@ -106,10 +116,10 @@ const Page = async ({ params, }) => {
                                     ))}
                                 </div>
                             </div>
+                            {/* <div className="flex gap-6"> */}
 
-                            <button className="mt-6 w-full bg-blue-600 text-white py-3 rounded-xl font-medium hover:bg-blue-700 transition">
-                                Add to Cart
-                            </button>
+                            <ProductActions id={id}></ProductActions>
+
                         </div>
                     </div>
                 </div>
