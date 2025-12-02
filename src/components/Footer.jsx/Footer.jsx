@@ -9,9 +9,9 @@ const Footer = () => {
 
                 {/* Brand */}
                 <div className="flex flex-col gap-4">
-                    <h2 className="text-2xl font-bold text-white">DynamicNav</h2>
+                    <h2 className="text-2xl font-bold text-white">Market</h2>
                     <p className="text-gray-400">
-                        Learn, grow, and achieve your goals with our curated courses.
+                        Shop smarter with our hand-picked collection of curated products
                     </p>
                     <div className="flex gap-4 mt-2">
                         <a href="#" className="hover:text-white transition"><FaFacebookF /></a>
